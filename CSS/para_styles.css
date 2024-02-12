@@ -1,0 +1,167 @@
+.template-text-1{
+   color : rgb(218, 215, 240);
+   font-family: system-ui, -apple-system;
+   line-height: 1.5;
+}
+
+.snippet {
+   border-radius: 10px;
+   background-color: rgba(35, 31, 49, 0.521);
+   display: flex;
+   justify-content: space-between;
+   margin: 1%;
+   padding: 1%;
+
+}
+
+
+.img-container {
+
+   left: 3%;
+   top: 3%;
+   width: 94%;
+   border-radius: 10px;
+   position: relative; 
+   border: solid   ;
+   border-width: 0px;
+   border-color: rgba(24, 24, 30, 0);
+   transition: 0.5s;
+   
+}
+
+.img-container:hover {
+   width : 97%;
+   left: 0%;
+   top: 0%;
+   border-color: rgb(124, 113, 198);
+   transition: all 0.2s;
+   border-width: 2px;
+}
+
+
+.img-shelf-horizon {
+   min-height: 200px; 
+   max-height: 200px;
+   display: flex; 
+   overflow: auto; 
+   scroll-behavior: smooth;
+   padding-top: 2%;
+   padding : 1%;
+   border-radius: 10px;
+   background-color: rgb(5, 1, 20);
+   transition: all 0.2s;
+   border: rgb(218, 215, 240) solid 1px;
+}
+
+.img-shelf-vertical {
+   height: 350px; 
+   display: flex;
+   flex-direction: column; 
+   overflow: auto; 
+   scroll-behavior: smooth;
+   padding-top: 2%;
+   padding : 1%;
+   border-radius: 10px;
+   background-color: rgb(5, 1, 20);
+   transition: all 0.2s;
+   border: rgb(218, 215, 240) solid 1px;
+}
+
+
+
+.img-shelf-horizon:hover {
+   /*  solid 4px;
+    */
+    border-color: rgb(124, 113, 198);
+    border-width: 3px;
+}
+
+.img-shelf-vertical:hover {
+   /*  solid 4px;
+    */
+    border-color: rgb(124, 113, 198);
+    height: 355px;
+    border-width: 3px;
+}
+
+.img-shelf-item-horizon {
+   min-width: 150px;
+   margin: 1%;
+   overflow: hidden; 
+   display: flex; 
+   flex-direction: column ; 
+   align-items: center;
+   transition: all 0.2s;
+   border-radius: 5px;
+   border: rgba(255, 255, 255, 0) solid 0px;
+}
+
+
+
+.img-shelf-item-vertical {
+   min-height: 200px;
+   margin: 1%;
+   overflow: hidden; 
+   display: flex; 
+   flex-direction: column ; 
+   align-items: center;
+   transition: all 0.2s;
+   border-radius: 5px;
+   border: rgba(255, 255, 255, 0) solid 0px;
+}
+
+.img-shelf-item-horizon:hover {
+   margin-top: 0%;
+   margin-bottom: 0%;
+   width: 26%;
+   border: white solid 2px;
+}
+
+
+
+
+.img-shelf-horizon::-webkit-scrollbar {
+   width: 12px ; /* Set the width of the scrollbar */
+   height: 0px;
+   transition: all 1s;
+   
+}
+ 
+ .img-shelf-horizon::-webkit-scrollbar-thumb {
+   background-color: rgba(218, 215, 240, 0.1); /* Set the color of the scrollbar thumb */
+   border-radius: 2px;
+   
+}
+ 
+ .img-shelf-horizon::-webkit-scrollbar-track {
+   background-color: rgba(0,0,0,0); /* Set the color of the scrollbar track */
+   
+}
+ 
+
+.img-shelf-vertical::-webkit-scrollbar {
+   width: 1px ; /* Set the width of the scrollbar */
+   height: 12px;
+   transition: all 1s;
+   
+}
+ 
+ .img-shelf-vertical::-webkit-scrollbar-thumb {
+   background-color: rgba(218, 215, 240, 0.1); /* Set the color of the scrollbar thumb */
+   border-radius: 2px;
+   
+}
+ 
+ .img-shelf-vertical::-webkit-scrollbar-track {
+   background-color: rgba(0,0,0,0); /* Set the color of the scrollbar track */
+   
+}
+ 
+
+
+
+
+
+ 
+
+

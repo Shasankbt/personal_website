@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./CSS/buttons.css">
+        <link rel="stylesheet" href="./CSS/nav_styles.css">
+        <link rel="stylesheet" href="./CSS/para_styles.css">
+        <script src="./JScripts/img-border.js"></script>
+        <script src="./JScripts/lock.js"></script>
+    </head>
+    <body style="margin-bottom: 200px;">
+        <h2 class="template-text-1">Just a few things I like to spend time on</h2>
+
+
+        <div class="snippet">
+            <div width="100% " style="padding-inline: 2%;">
+                <h2 class="template-text-1">
+                    watching Movies & Webseries
+                </h3>
+                <hr width="100%">
+                <p class="template-text-1" style="margin-left: 40px; font-size: 20px;">
+                    Im not going to pretend that i have watched all the movies or all the must watch ones, but 
+                    I can say that I'm an avid movie fan since my 11th grade.
+                    <br> 
+                    some of my favorites are 
+                    
+                </p>
+                <ul class="template-text-1" style="margin-left: 40px; font-size: 20px;">
+                    <li>
+                        Mission Impossible Franchise</li>
+                    <li>interstellar</li>
+                    <li>Breaking Bad</li>
+                    <li>Money Heist</li>
+                    <li>Dark Knight</li>
+                    <li>interstellar</li>
+                </ul>
+                <p class="template-text-1" style="margin-left: 80px; font-size: 15px; "">[ and many more ... ]</p>
+            </div>
+            <div style="width: 100%; margin-top: 76px; min-height: 300px; max-height: 300px;" class="img-shelf-horizon"  >
+                <div class="img-shelf-item-horizon"><img src="./Pictures/movies/mov_1.png" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/movies/mov_2.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/movies/mov_6.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/movies/mov_3.jpeg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/movies/mov_7.png" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/movies/mov_4.jpeg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/movies/mov_5.jpg" height="100%"></div>
+                <div class="img-shelf-item-horizon"><img src="./Pictures/movies/mov_8.png" height="100%"></div>
+            </div>
+        </div>  
+
+        <script>
+            window.onload = function () {
+                let image_shelves = document.querySelectorAll('.img-shelf-horizon');
+                image_shelves.forEach ( function (image_shelf) {
+                    if (image_shelf.getAttribute('data-img-view') == "full") {
+
+                        image_shelf_items = image_shelf.childNodes;
+
+                        image_shelf_items.forEach( function(image_container) {
+                            let image = image_container.firstElementChild;                        
+                            if (image) {
+                                image_container.style.minWidth = image.width + 'px';
+                            }
+                        })
+                    }
+                    
+                })
+                
+                
+            }
+        </script>
+        
+    </body>
+</html>

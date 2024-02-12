@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./CSS/buttons.css">
+        <link rel="stylesheet" href="./CSS/nav_styles.css">
+        <link rel="stylesheet" href="./CSS/para_styles.css">
+        <script src="./JScripts/img-border.js"></script>
+        <script src="./JScripts/lock.js"></script>
+    </head>
+    <body style="margin-bottom: 200px;">
+        <h2 class="template-text-1">Things I think I can do </h2>
+
+
+        
+
+        <div class="snippet">
+
+            
+            <div style="width: 50%; ">
+                <h2 class="template-text-1" style="margin-left: 40px;">Photograpgy</h3>
+                    <div class="img-shelf-vertical" >
+                        <div class="img-shelf-horizon" style="border: none;" data-img-view="full">
+                            <div class="img-shelf-item-horizon"><img src="./Pictures/Wallpapers/photo_1_2024-01-29_13-28-47.jpg" height="100%"></div>
+                            <div class="img-shelf-item-horizon"><img src="./Pictures/Wallpapers/photo_4_2024-01-29_13-28-47.jpg" height="100%"></div>
+                            <div class="img-shelf-item-horizon"><img src="./Pictures/Wallpapers/photo_3_2024-01-29_13-28-47.jpg" height="100%"></div>
+                            <div class="img-shelf-item-horizon"><img src="./Pictures/Wallpapers/photo_2_2024-01-29_13-28-47.jpg" height="100%"></div>
+                        </div>
+                        <div class="img-shelf-horizon" style="border: none;" data-img-view="full">
+                            <div class="img-shelf-item-horizon"><img src="./Pictures/Wallpapers/photo_9_2024-01-29_13-28-47.jpg" height="100%"></div>
+                            <div class="img-shelf-item-horizon"><img src="./Pictures/Wallpapers/photo_6_2024-01-29_13-28-47.jpg" height="100%"></div>
+                            <div class="img-shelf-item-horizon"><img src="./Pictures/Wallpapers/photo_7_2024-01-29_13-28-47.jpg" height="100%"></div>
+                            <div class="img-shelf-item-horizon"><img src="./Pictures/Wallpapers/photo_8_2024-01-29_13-28-47.jpg" height="100%"></div>
+                        </div>
+                        <div class="img-shelf-horizon" style="border: none;" data-img-view="full">
+                            <div class="img-shelf-item-horizon"><img src="./Pictures/Wallpapers/photo_5_2024-01-29_13-28-47.jpg" height="100%"></div>
+                            <div class="img-shelf-item-horizon"><img src="./Pictures/Wallpapers/photo_10_2024-01-29_13-28-47.jpg" height="100%"></div>
+                            <div class="img-shelf-item-horizon"><img src="./Pictures/Wallpapers/photo_11_2024-01-29_13-28-47.jpg" height="100%"></div>
+                        </div>
+                    </div>
+            </div>
+            <div>
+                <hr style="margin-top: 68px; margin-left: 20px; ">
+                <p class="template-text-1" style="margin-left: 20px; font-size: 20px;">
+                    Welcome to my personal gallery of favorites. Like many, Im instinctively drawn to capture natures finest moments through 
+                    the lens of my camera.<br><br> This collection represents my best efforts to encapsulate and do justice to these breathtaking scenarios. 
+                    <br><br>Candidly, my forte isnt in capturing portraits, hence the noticeable absence of people in my photos. Enjoy the view!
+                </p>
+            </div>
+            
+            
+        </div>
+
+        <div class="snippet" style="flex-direction: row-reverse;">
+            
+
+                <div class="img-shelf-vertical" style="min-width: 40%;   margin-top: 76px; padding: 0;display: block; height: fit-content; max-height: 350px;" id="my_yt_videos" >
+                    <div style="width: 75%; display: inline-flex; margin: 5px;">
+                        <img src="./Pictures/Thumbnails/maxresdefault.webp" style="width: 100%; height: fit-content; border-radius: 5px;" class="thumbnail_img">
+                        <p class="template-text-1" style="margin-left: 25px; font-size: 20px;">
+                            The Mission Impossible tribute<br>
+                            
+                                <a href="https://www.youtube.com/watch?v=8Y147OWBTUs" target="_blank"><button class="normal-button" style="margin: 0px;">Watch here</button> </a>
+                            
+                            
+                        </p>
+                    </div>
+                    <div style="width : 75%; display: flex; margin: 5px; "  class="thumbnail_im">
+                        <img src="./Pictures/Thumbnails/maxresdefault.jpg" style="width: 100%; height: fit-content; border-radius: 5px;" class="thumbnail_img">
+                        <p class="template-text-1" style="margin-left: 25px; font-size: 20px;">The arc of Iron man<br>
+                        
+                            <a href="https://www.youtube.com/watch?v=8Y147OWBTUs" target="_blank"><button class="normal-button" style="margin: 0px;">Watch here</button> </a>
+                        </p>
+                    </div>
+
+                    <script>
+                        window.addEventListener('resize', function(){
+                            let thumbnails = document.querySelectorAll('.thumbnail_img');
+                            let container = document.getElementById('my_yt_videos');
+                            
+                                thumbnails.forEach(thumbnail => {
+                                    if (container.offsetWidth <= 475 ){
+                                        thumbnail.style.display = "none";
+                                    }
+                                    else {
+                                        thumbnail.style.display = "block";
+                                    }
+                            })
+                            
+                        })
+                        
+                    </script>
+                </div>
+                <div  style="margin-right: 10px;">
+                    <h2 class="template-text-1"> Video Editing </h2>
+                    <hr>
+    
+                    <p class="template-text-1" style="margin-left: 20px; font-size: 20px;">
+                        My love towards the movies continues here as well, making the tribute videos (just two) of the 
+                        movies i like insync with the the score and music of that moveies. 
+                        <br><br>
+                        With my basic editing skills and lots of hours spent on adjusting the placement of clips
+                        and syncing the music, i have realised two things. First being, there goes a lot more work in the movies 
+                        you watch than you might think and second .... editing is hard bro !. im not talking about fancy graphics and all, 
+                        just the screenplay (<i>or maybe its just hard for me i think</i>)
+                        <br><br>
+                        The two videos i've made are on my youtube channel <a = href="https://www.youtube.com/@techbuddies2975" target="_blank"><button class="normal-button">Film Cuts</button></a>
+                        and its description would go something like ...
+                    </p>
+                </div>
+            
+        </div>
+
+        <script>
+            window.onload = function () {
+                let image_shelves = document.querySelectorAll('.img-shelf-horizon');
+                image_shelves.forEach ( function (image_shelf) {
+                    if (image_shelf.getAttribute('data-img-view') == "full") {
+
+                        image_shelf_items = image_shelf.childNodes;
+
+                        image_shelf_items.forEach( function(image_container) {
+                            let image = image_container.firstElementChild;                        
+                            if (image) {
+                                image_container.style.minWidth = image.width + 'px';
+                            }
+                        })
+                    }
+                    
+                })
+                
+                
+            }
+        </script>
+        
+    </body>
+</html>

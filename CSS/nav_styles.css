@@ -1,0 +1,80 @@
+body {
+    transition: all 0.3s ease;
+}
+
+.nav-bar {
+    
+    margin: auto;
+    background-color: rgba(35, 31, 49, 0.521);
+    text-align: center;
+    width: fit-content;
+    
+    border-radius: 15px;
+    padding: 0px;
+    font-family: system-ui;
+
+}
+
+.nav-button {
+
+    font-family: system-ui;
+    text-align: center;
+    background-color: rgba(23, 30, 65, 0);
+    color: rgb(168, 179, 236);
+    font-size: 18px;
+    border: none;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-inline: 5px;
+    border-radius: 12px;
+    transition:  all 0.2s;
+
+}
+
+.nav-button:hover{
+
+    background-color:rgba(255, 255, 255, 0.082) ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-inline: 10px;
+    margin: 0px;
+}
+
+.nav-button:active {
+    background-color: rgb(55, 47, 111);
+    color: rgb(245, 246, 255);
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-inline: 10px;
+}
+
+
+
+.nav-current-button {
+
+    font-family: system-ui;
+    text-align: center;
+    background-color: rgb(55, 47, 111);
+    color: rgb(245, 246, 255);
+    font-size: 20px;
+    border: none;
+    
+    
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s;
+
+}
+
+.nav-current-button:hover {
+
+    padding: 15px;
+    margin: 0px;
+    border-radius: 15px;
+    border-color: rgba(168, 179, 236, 0.712);
+    
+}
+

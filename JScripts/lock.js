@@ -54,15 +54,35 @@ window.onload = function () {
         //submit_button.type = 'submit';
         submit_button.classList.add('submit-button');
         submit_button.onclick = verifyCode;
-        submit_button
         submit_button.style.position = 'fixed';
         submit_button.style.top = '35%';
         submit_button.innerHTML = "go";
+
+        let contact = document.createElement('p');
+        contact.classList.add('template-text-1');
+        contact.innerHTML =
+             `ⓘ this passcode is implemented in the concern
+              of privacy <br> if you want to access the website, message me via my `;
+        contact.style.position = 'fixed';
+        contact.style.top = '45%';
+        contact.style.fontSize = '13px'
+        contact.style.opacity = '0.4';
+        contact.style.textAlign = 'center';
+
+        let email = document.createElement('a');
+        email.href = "mailto:docstefenstrange@gmail.com"
+        email.innerHTML = "email"
+        email.classList.add('template-text-1');
+
+        contact.appendChild(email);
+
+
 
         // Append the label and input to the lockDiv
         lockDiv.appendChild(label);
         lockDiv.appendChild(input);
         lockDiv.appendChild(submit_button);
+        lockDiv.appendChild(contact);
 
         div.appendChild(lockDiv);
 
